@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Registrasi;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $dat = Registrasi::all();
+        $data = $dat->sortByDesc('id');
+        return view('home',compact('data'));
     }
 }

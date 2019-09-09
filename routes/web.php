@@ -12,10 +12,23 @@
 */
 
 Route::get('/', function () {
+    if(Auth::check()) {
+        return redirect()->route('home');
+    } 
     return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::POST('/registrasi', 'RegistrasiController@store')->name('saveseminar');
+Route::post('/registrasi', 'RegistrasiController@store')->name('saveseminar');
+Route::get('/registrasi/delete/{id}', 'RegistrasiController@delete');
+
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect('/');
+});
+
+Route::get('/email', function () {
+    return view('email2');
+});

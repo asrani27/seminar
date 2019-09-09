@@ -330,20 +330,6 @@
         } 
       }
 
-    .auto-style1 {
-		background-image: url('https://www.vactualpapers.com/web/wallpapers/modern-abstract-and-colorful-material-design-hd-wallpaper-126/thumbnail/lg.jpg');
-	}
-	.auto-style2 {
-		font-family: "Arial Rounded MT Bold";
-	}
-	.auto-style3 {
-		color: #FFFFFF;
-	}
-	.auto-style5 {
-		font-family: "Franklin Gothic Medium";
-		font-size: large;
-	}
-
     </style>
   </head>
   <body class="">
@@ -363,26 +349,24 @@
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                      <p>Hi, {{$nama}}</p>
-                        <p>Berikut Tiket Anda.</p>
-						<table class="auto-style1" style="width: 100%; height: 153px">
-							<tr>
-								<td class="align-center"><strong>&nbsp;</strong><span class="auto-style3">
-								<strong><br></strong></span>
-								<span class="auto-style2">
-								<span class="auto-style3"><strong>TIKET NO : 
-                                #000{{$nomor}}&nbsp;</strong></span><strong><br class="auto-style3">
-								</strong><span class="auto-style3"><strong>
-								"{{$nama}}"</strong></span><strong><br class="auto-style3">
-								<br class="auto-style3"></strong></span><strong>
-								<span class="auto-style3">
-								<span class="auto-style5">SEMINAR INTERNASIONAL</span></span><span class="auto-style5"><br class="auto-style3">
-								<span class="auto-style3">DISKOMINFOTIK 
-								BANJARMASIN</span></span></strong></td>
-							</tr>
-						</table>
-                        <p>&nbsp;</p>
-						<p>Jika anda tidak merasa melakukan registrasi seminar internasional, silahkan abaikan pesan email ini.</p>
+                        <p>Hi,</p>
+                        <p>Berikut No Tiket Anda.</p>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="#" target="_blank">32412534</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>Jika anda tidak merasa melakukan registrasi seminar internasional, silahkan abaikan pesan email ini.</p>
                         <p>Terima Kasih.</p>
                       </td>
                     </tr>

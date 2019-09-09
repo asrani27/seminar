@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="{{url('vali/css/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login - Admin</title>
+    <title>Login - Vali Admin</title>
   </head>
   <body>
     <section class="material-half-bg">
@@ -16,32 +16,31 @@
     </section>
     <section class="login-content">
       <div class="logo">
-        <h1>Administration</h1>
+        <h1>Vali</h1>
       </div>
-      <div class="login-box">  
-        <form class="login-form" method="POST" action="{{ route('login') }}">
-        {{ csrf_field() }}
+      <div class="login-box">
+        <form class="login-form" action="index.html">
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
           <div class="form-group">
-            <label class="control-label">E-MAIL</label>
-            <input class="form-control" type="text" name="email" placeholder="email" autofocus>
+            <label class="control-label">USERNAME</label>
+            <input class="form-control" type="text" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label">PASSWORD</label>
-            <input class="form-control" type="password" name="password" placeholder="Password">
+            <input class="form-control" type="password" placeholder="Password">
           </div>
           <div class="form-group">
             <div class="utility">
               <div class="animated-checkbox">
                 <label>
-                  <a href="{{url('/')}}" ><span class="label-text">< Back To Home</span></a>
+                  <input type="checkbox"><span class="label-text">Stay Signed in</span>
                 </label>
               </div>
-              {{-- <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p> --}}
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
             </div>
           </div>
           <div class="form-group btn-container">
-            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
           </div>
         </form>
         <form class="forget-form" action="index.html">
@@ -60,42 +59,18 @@
       </div>
     </section>
     <!-- Essential javascripts for application to work-->
-    <script src="{{url('vali/js/jquery-3.2.1.min.js')}}"></script>
-    <script src="{{url('vali/js/popper.min.js')}}"></script>
-    <script src="{{url('vali/js/bootstrap.min.js')}}"></script>
-    <script src="{{url('vali/js/main.js')}}"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
-    <script src="{{url('vali/js/plugins/pace.min.js')}}"></script>
+    <script src="js/plugins/pace.min.js"></script>
     <script type="text/javascript">
       // Login Page Flipbox control
       $('.login-content [data-toggle="flip"]').click(function() {
       	$('.login-box').toggleClass('flipped');
       	return false;
       });
-    </script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script>
-        @if(Session::has('message'))
-        var type = "{{ Session::get('alert-type', 'info') }}";
-        switch(type){
-            case 'info':
-                toastr.info("{{ Session::get('message') }}");
-                break;
-            
-            case 'warning':
-                toastr.warning("{{ Session::get('message') }}");
-                break;
-    
-            case 'error':
-                toastr.error("{{ Session::get('message') }}");
-                break;
-                
-            case 'success':
-                toastr.success("{{ Session::get('message') }}");
-                break;
-    
-        }
-        @endif
     </script>
   </body>
 </html>

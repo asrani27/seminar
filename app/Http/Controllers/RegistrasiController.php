@@ -26,8 +26,9 @@ class RegistrasiController extends Controller
         $s->telp     = $r->telp;
         $s->email    = $r->email;
         $s->save();
+        $id_peserta = $s->id;
 
-        Mail::send('email', ['nama' => $r->name], 
+        Mail::send('email', ['nama' => $r->name, 'nomor' => $id_peserta], 
 
         function ($message) use ($r){
         $message->subject('Tiket Seminar Internasional');
@@ -36,6 +37,13 @@ class RegistrasiController extends Controller
         });
 
         Alert::success('Message', 'Ticket Has Send Your Email')->persistent("Close");
+        return back();
+    }
+
+    public function delete($id)
+    {
+        $d = Registrasi::find($id)->delete();
+        Alert::success('Message', 'Berhasil Di Hapus');
         return back();
     }
 }

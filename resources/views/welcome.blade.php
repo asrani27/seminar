@@ -60,8 +60,7 @@
                 </select><br><br>
 
     			<p class="contact"><label for="name">Instansi / Your workplace name</label></p> 
-    			<input id="name" name="instansi" placeholder="Tempat Anda Bekerja Saat Ini / 
-                Your workplace name" required="" tabindex="1" type="text"> 
+    			<input id="name" name="instansi" placeholder="Tempat Anda Bekerja Saat Ini / Your workplace name" required="" tabindex="1" type="text"> 
     			 
     			<p class="contact"><label for="name">Jabatan / Your Position Name</label></p> 
     			<input id="name" name="jabatan" placeholder="Jabatan Anda Saat Ini / Your Position Name" required="" tabindex="1" type="text"> 
