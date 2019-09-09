@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Registrasi extends Model
 {
-    //
+    protected $table = 'reg';
 }
