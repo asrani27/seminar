@@ -20,7 +20,7 @@
 <body>
 <div class="container">
 			<!-- freshdesignweb top bar -->
-            <div class="freshdesignweb-top">
+            {{-- <div class="freshdesignweb-top">
                 <a href="#" target="_blank">Home</a>
                 <span class="right">
                     <a href="#">
@@ -28,13 +28,13 @@
                     </a>
                 </span>
                 <div class="clr"></div>
-            </div><!--/ freshdesignweb top bar -->
+            </div> --}}
+            <!--/ freshdesignweb top bar -->
 			<header>
-                <table>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Lambang_Kota_Banjarmasin.gif" height="100"></td>
-                    <td><h1>REGISTRASI SEMINAR INTERNASIONAL</h1></td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1018px-Logo_Universitas_Brawijaya.svg.png" height="100" width="90"></td>
-                </table>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Lambang_Kota_Banjarmasin.gif" height="100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1018px-Logo_Universitas_Brawijaya.svg.png" height="100" width="90">
+                <br>
+                <h1>REGISTRASI SEMINAR INTERNASIONAL</h1>
             </header>       
       <div  class="form">
       <form id="contactform" action="{{route('saveseminar')}}" method="POST">
