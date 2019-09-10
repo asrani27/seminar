@@ -19,6 +19,7 @@
     <div class="tile">
       <div class="tile-body">
         <h3 class="tile-title">Data Pendaftar</h3>
+        <div class="table-responsive">
         <table class="table table-hover table-bordered" id="sampleTable">
           <thead>
             <tr>
@@ -56,6 +57,7 @@
               @endforeach
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
