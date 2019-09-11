@@ -14,7 +14,7 @@
             }
             
             input[type=text], input[type=email], select, textarea {
-              width: 8git a0%;
+              width: 80%;
               padding: 12px;
               border: 1px solid #ccc;
               border-radius: 4px;
