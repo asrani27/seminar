@@ -114,8 +114,9 @@
             </div> --}}
             <!--/ freshdesignweb top bar -->
 			<header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Lambang_Kota_Banjarmasin.gif" height="100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1018px-Logo_Universitas_Brawijaya.svg.png" height="100" width="90">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Logo_Universitas_Brawijaya.svg/1018px-Logo_Universitas_Brawijaya.svg.png" height="100"> &nbsp;
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Lambang_Kota_Banjarmasin.gif" height="100">&nbsp;
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_unlam.png" height="100">
                 <br>
                 <h1>REGISTRASI SEMINAR INTERNASIONAL</h1>
             </header>       
