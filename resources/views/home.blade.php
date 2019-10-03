@@ -17,8 +17,12 @@
 <div class="row">
   <div class="col-md-12">
     <div class="tile">
+      
+        <div class="tile-title-w-btn">
+            <h3 class="title">Data Pendaftar</h3>
+            <p><a class="btn btn-primary icon-btn" href="{{url('pdf')}}" target="_blank"><i class="fa fa-file"></i>PDF</a></p>
+          </div>
       <div class="tile-body">
-        <h3 class="tile-title">Data Pendaftar</h3>
         <div class="table-responsive">
         <table class="table table-hover table-bordered" id="sampleTable">
           <thead>

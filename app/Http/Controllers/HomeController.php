@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Registrasi;
+use PDF;
 
 class HomeController extends Controller
 {
@@ -27,5 +28,12 @@ class HomeController extends Controller
         $dat = Registrasi::all();
         $data = $dat->sortByDesc('id');
         return view('home',compact('data'));
+    }
+
+    public function pdf()
+    {
+        $data = Registrasi::all();
+        $pdf = PDF::loadView('pdf', compact('data'));
+        return $pdf->download('daftarpeserta.pdf');
     }
 }

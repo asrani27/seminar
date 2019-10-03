@@ -21,6 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/pdf', 'HomeController@pdf');
 Route::post('/registrasi', 'RegistrasiController@store')->name('saveseminar');
 Route::get('/registrasi/delete/{id}', 'RegistrasiController@delete');
 
