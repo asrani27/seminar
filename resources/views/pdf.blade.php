@@ -34,9 +34,9 @@
 <table cellpadding="2" cellspacing="0" class="auto-style4" style="width: 100%">
 	<tr>
 		<td class="auto-style5"><strong>No</strong></td>
-		<td class="auto-style5"><strong>Tiket</strong></td>
 		<td class="auto-style5"><strong>Nama</strong></td>
 		<td class="auto-style5"><strong>No Telp</strong></td>
+		<td class="auto-style5"><strong>Email</strong></td>
     </tr>
     <?php
     $no = 1;
@@ -44,9 +44,9 @@
     @foreach ($data as $d)
 	<tr>
         <td class="auto-style5">{{$no++}}</td>
-        <td class="auto-style5">#000{{$d->id}}</td>
         <td class="auto-style6">&nbsp;{{$d->nama}}</td>
         <td class="auto-style5">{{$d->telp}}</td>
+        <td class="auto-style6">&nbsp;{{$d->email}}</td>
     </tr>
     @endforeach
 </table>
